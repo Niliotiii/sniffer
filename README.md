@@ -21,7 +21,7 @@ O sniffer foi projetado especialmente para detectar e analisar **tráfego HTTP**
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/sniffer.git
+   git clone https://github.com/Niliotiii/sniffer
    cd sniffer
    ```
 
