@@ -39,13 +39,14 @@ O sniffer foi projetado especialmente para detectar e analisar **tráfego HTTP**
 
 3. Configure um ambiente virtual Python (recomendado):
    ```bash
+   cd sniffer
    python3 -m venv venv
    source venv/bin/activate
    ```
 
 4. Dê permissão de execução ao script principal:
    ```bash
-   chmod +x sniffer/packet_sniffer.py
+   chmod +x packet_sniffer.py
    ```
 
 ---
