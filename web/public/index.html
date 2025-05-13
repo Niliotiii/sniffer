@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login de Teste</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Login</h2>
+      
+      <div id="error-message"></div>
+
+      <form id="login-form" action="http://localhost:3000/login" method="POST">
+        <div class="input-group">
+          <label for="username">Usuário</label>
+          <input type="text" id="username" name="username" required autofocus>
+        </div>
+        
+        <div class="input-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        
+        <button type="submit" class="login-button">Entrar</button>
+      </form>
+      
+      <div class="info-box">
+        <p>Esta é uma página de demonstração para testes de sniffer de rede.</p>
+        <p>As credenciais são enviadas em texto simples (sem criptografia).</p>
+        <p class="emphasis">Este formulário faz POST diretamente para http://localhost:3000/login</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('error')) {
+        document.getElementById('error-message').textContent = 'Credenciais inválidas!';
+        document.getElementById('error-message').style.display = 'block';
+      }
+    };
+    
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+    });
+  </script>
+</body>
+</html>

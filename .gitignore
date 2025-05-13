@@ -1,0 +1,5 @@
+/venv
+/sniffer/venv
+
+/node_modules
+/web/node_modules
